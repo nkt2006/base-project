@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+
+<body class="d-flex flex-column min-vh-100">
     <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="/images/Logo_nikita_online.svg"  class="logo-foto">
+                <img src="images/Logo_nikita_online.svg" class="logo-foto">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -20,7 +22,7 @@
                         <a class="nav-link active" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pages/projects.html">Проекты</a>
+                        <a class="nav-link" href="pages/projects.html">Проекты</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/diary.html">Дневник</a>
@@ -38,11 +40,27 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="/images/student image.png" alt="Фото студента" class="profile-img rounded-circle">
+                    <img src="images/student image.png" alt="Фото студента" class="profile-img rounded-circle">
                 </div>
                 <div class="col-md-8">
                     <h1 class="display-4 fw-bold">Никита</h1>
-                    <p class="lead">Привет! Я студент Факультета "Фуллстек разработка", группа ЭФБО-11-24. Увлекаюсь веб-разработкой</p>
+                    <p class="lead">Привет! Я студент Факультета "Фуллстек разработка", группа ЭФБО-11-24. Увлекаюсь
+                        веб-разработкой</p>
+
+                    <div class="mt-4">
+                        <a href="assets/resume.docx" download="Резюме_Никита.docx"
+                            class="download-btn btn btn-light btn-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-download" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>
+                            Скачать резюме
+                        </a>
+                        <p class="text-light mt-2 small opacity-75">DOCX</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,28 +122,28 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Проект 1">
+                        <img src="images/mySite.png" class="card-img-top" alt="Проект 1">
                         <div class="card-body text-center">
-                            <h5 class="card-title">П1</h5>
-                            <p class="card-text">Описание проекта 1</p>
+                            <h5 class="card-title">Мой сайт</h5>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Проект 2">
+                        <img src="images/weather.png" class="card-img-top" alt="Проект 2">
                         <div class="card-body text-center">
-                            <h5 class="card-title">П2</h5>
-                            <p class="card-text">Описание проекта 2</p>
+                            <h5 class="card-title">Приложение погоды</h5>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card project-card h-100">
-                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Проект 3">
+                        <img src="images/password.png" class="card-img-top" alt="Проект 3">
                         <div class="card-body text-center">
-                            <h5 class="card-title">П3</h5>
-                            <p class="card-text">Описание проекта 3</p>
+                            <h5 class="card-title">Генератор паролей</h5>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -134,16 +152,14 @@
     </section>
 
     <!-- Футер -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <p class="mb-0">© 2025 Контакты</p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white me-3">Email</a>
-                    <a href="#" class="text-white me-3">GitHub</a>
-                    <a href="#" class="text-white">LinkedIn</a>
+                    <a href="https://github.com/nkt2006" class="text-white me-3">GitHub</a>
                 </div>
             </div>
         </div>
@@ -151,4 +167,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
